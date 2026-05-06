@@ -3,7 +3,7 @@ name: CI 313552038
 on:
   push:
     branches:
-      - "**"
+      - '**'
   pull_request:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: '22'
           cache: npm
 
       - name: Install dependencies
