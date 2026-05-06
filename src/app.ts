@@ -1,4 +1,4 @@
-import Fastify, { FastifyServerOptions } from "fastify";
+import Fastify, { FastifyServerOptions } from 'fastify';
 
 export function buildApp(options: FastifyServerOptions = {}) {
   const app = Fastify({
@@ -15,7 +15,7 @@ export function buildApp(options: FastifyServerOptions = {}) {
 
   app.get('/health', async () => {
     return {
-      status: 'ok'
+      status: 'healthy'
     };
   });
 
